@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Birthday Surprise</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Welcome Screen -->
+  <div id="welcome-screen" class="screen">
+    <h1>🎉 Heyy Jann, Let's Play a Game! 🎉</h1>
+    <p>Are you ready?</p>
+    <button id="start-game-btn">Yes!</button>
+  </div>
+
+  <!-- Instruction Screen -->
+  <div id="instruction-screen" class="screen hidden">
+    <h1>🎮 How to Play 🎯</h1>
+    <p>You need to win 3 out of 5 rounds of Rock-Paper-Scissors to clear the game. Let's see if you can win my heart! 💖</p>
+    <button id="start-round-btn">Let's Start!</button>
+  </div>
+
+  <!-- Game Screen -->
+  <div id="game-screen" class="screen hidden">
+    <h1>Round <span id="round-number">1</span></h1>
+    <div id="game-options">
+      <button class="game-option" data-option="✊">✊</button>
+      <button class="game-option" data-option="✋">✋</button>
+      <button class="game-option" data-option="✌️">✌️</button>
+    </div>
+    <p id="result-text"></p>
+  </div>
+
+  <!-- Winning Screen -->
+  <div id="winning-screen" class="screen hidden">
+    <h1>🎉 Yayyyy, You Won the Game! 🎉</h1>
+    <p>Like you won my heart! 💖</p>
+    <p>I have something special for youuu... Do you want to see?</p>
+    <button id="show-surprise-btn">Yes!</button>
+  </div>
+
+  <!-- Surprise Screen -->
+  <div id="surprise-screen" class="screen hidden">
+    <h1>🎁 Here's Your Surprise! 🎁</h1>
+    <video id="birthday-video" controls autoplay>
+      <source src="video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <!-- Background Music -->
+  <audio id="background-music" loop>
+    <source src="music.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
